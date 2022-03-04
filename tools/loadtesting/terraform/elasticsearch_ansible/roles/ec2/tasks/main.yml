@@ -11,4 +11,4 @@
     src: /dev/sdb
     path: /usr/share/elasticsearch/data
     fstype: ext4
-    state: present
+    state: mounted
