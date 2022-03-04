@@ -9,6 +9,6 @@
     dev: /dev/sdb
 - ansible.posix.mount:
     src: /dev/sdb
-    path: /usr/share/elasticsearch/data
+    path: /var/lib/docker/volumes/
     fstype: ext4
     state: mounted
