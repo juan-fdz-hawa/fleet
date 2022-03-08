@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	defaultFileMode = 0600
+	defaultFileMode = 0o600
 )
 
 func init() {
@@ -72,6 +72,7 @@ func createApp(reader io.Reader, writer io.Writer, exitErrHandler cli.ExitErrHan
 		hostsCommand(),
 		vulnerabilityDataStreamCommand(),
 		packageCommand(),
+		desktop(),
 	}
 	return app
 }
